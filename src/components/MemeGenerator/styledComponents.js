@@ -32,3 +32,11 @@ export const Select = styled.select`
 export const Option = styled.option`
   color: #000;
 `
+
+export const Button = styled.button`
+  color: #fff;
+  background-color: #0b69ff;
+  border-radius: 8px;
+  height: 30px;
+  width: 80px;
+`
