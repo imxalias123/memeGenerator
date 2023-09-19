@@ -9,6 +9,8 @@ import {
   Select,
   Option,
   Button,
+  Output,
+  Para,
 } from './styledComponents'
 
 const fontSizesOptionsList = [
@@ -106,6 +108,14 @@ class MemeGenerator extends Component {
             </Select>
             <Button type="button">Generate</Button>
           </Form>
+          {generate ? (
+            <Output imgUrl={urlInput}>
+              <Para>{topInput}</Para>
+              <Para>{bottomInput}</Para>
+            </Output>
+          ) : (
+            ''
+          )}
         </Wrap>
       </Container>
     )
