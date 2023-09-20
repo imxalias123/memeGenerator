@@ -10,7 +10,7 @@ export const Heading = styled.h1`
   color: #35469c;
   font-size: 30px;
 `
-export const Label = styled.p`
+export const Label = styled.label`
   color: #7e858e;
   font-size: 30px;
 `
@@ -29,7 +29,8 @@ export const Wrap = styled.div`
 export const Form = styled.form`
   display: flex;
   flex-direction: column;
-  width: 50%;
+  width: 45%;
+  margin-right: 10px;
 `
 export const Select = styled.select`
   border: 1px solid #7e858e;
@@ -50,11 +51,17 @@ export const Button = styled.button`
 `
 export const Output = styled.div`
   background-image: ${props => props.imgUrl};
+  background-size: cover;
+  width: 100vh;
+  height: 90vh;
   display: flex;
+  margin-bottom: 30px;
   flex-direction: column;
-  justify-content: center;
-  align-items: space-between;
+  justify-content: space-between;
+  align-items: center;
 `
 export const Para = styled.p`
   color: #fff;
+  font-size: ${props => props.fontSize}px;
+  margin: 70px;
 `
